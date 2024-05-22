@@ -1,0 +1,35 @@
+   # 对历史记录文件进行遍历
+    for data in history_data:
+        url_id = data[0]
+        key = url_id
+
+        if (key in dict_data.keys()):
+            # 存储url访问次数
+            dict_data[key][0] += 1
+            # 存储url地址
+            dict_data[key][1] = data[1]
+            # 存储url标题
+            dict_data[key][2] = data[2]
+
+        else:
+            dict_data[key] = [0, '', '']
+
+
+
+    # 筛选出前k=10个频率最高的数据
+    top_k_dict = get_top_k_from_dict_value_1(dict_data, 100)
+    # print(top_k_dict)
+
+    # 返回的table data数据
+    table_data = []
+
+    for index, item in enumerate(top_k_dict.items()):
+        table_data.append({'id': index+1, 'url': item[1][1], 'title': item[1][2], 'count': item[1][0]})
+
+
+    return table_data
+
+
+
+# 返回 页面访问总时间的URL的数据
+def table_data_url_time_rank(history_data):
