@@ -1,0 +1,9 @@
+<form method="post">
+<input type="text"  name="username" id="username" onKeyPress="return EnterStop(event);"/>
+    <input type="button" value="提交" id="submint"/>
+ </form>
+function EnterStop(e){
+         if(e.keyCode == 13){
+           return false;
+         }
+}
