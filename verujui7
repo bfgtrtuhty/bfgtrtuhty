@@ -1,0 +1,14 @@
+<script lang="ts">
+import { defineComponent } from 'vue';
+export default defineComponent({
+  name: 'Test',
+  setup() {
+    let str = '富朝阳的前端博客';
+    let newStr = escape(str);
+    console.log('字符串：', str);
+    console.log('加密：', newStr);
+    let newStr2 = unescape(newStr);
+    console.log('解密：', newStr2);
+  }
+});
+</script>
