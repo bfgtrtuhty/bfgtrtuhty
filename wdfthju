@@ -1,0 +1,17 @@
+version: "3.3"
+
+services:
+  kettle:
+    image: hiromuhota/webspoon:latest
+    volumes:
+      # 如需添加jar包则将jar包挂载进docker容器
+      - ./volumes/lib/mysql-connector-java-5.1.48.jar:/usr/local/tomcat/webapps/spoon/WEB-INF/lib/mysql-connector-java-5.1.48.jar
+      # 保证重启后资源库数据不丢失，需挂载此目录
+      # 需要提前创建好该文件, 并授权: mkdir -m 777 ./volumes/.kettle
+      - ./volumes/.kettle:/home/tomcat/.kettle
+      # 如需汉化，挂载此目录并添加配置
+      - ./volumes/setenv.sh:/usr/local/tomcat/bin/setenv.sh
+    environment:
+      - LANG=zh_CN.UTF-8
+    ports:
+      - "9002:8080"
