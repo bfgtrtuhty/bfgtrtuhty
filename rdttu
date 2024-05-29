@@ -1,0 +1,7 @@
+<div id="printShow">
+    
+  //要打印的区域
+ 
+</div>
+
+<input type="button" id="printBtn"/>
