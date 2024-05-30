@@ -1,0 +1,9 @@
+mergeInto(LibraryManager.library, {
+
+  ShowDialog: function (str) {
+    var tip = UTF8ToString(str);
+    // '__UnityLib__' 是插件提供的unity对象，相当于绑定了网页渲染出来的Unity容器
+    __UnityLib__.showDialog(tip);
+  },
+
+});
