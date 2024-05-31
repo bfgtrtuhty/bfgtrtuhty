@@ -1,0 +1,45 @@
+$.ajax({
+        url: "/order/userPage?page="+page+"&pageSize="+pageSize,    //请求的url地址  
+        cache: "false",   //设置为false将不会从浏览器中加载请求信息
+        async: "true",    //true所有请求均为异步请求
+        dataType: "json", //请求返回数据的格式
+        type:"get",      //请求方式
+ 
+上面等同于==>>
+async initData(){
+ 
+   paging: {
+      page: 1,
+      pageSize: 5
+   }
+   const res = await orderPagingApi(this.paging) 
+}
+ 
+function orderPagingApi(data) {
+    return $axios({
+        'url': '/order/userPage',
+        'method': 'get',
+        //请求参数
+        params: {...data}
+    })
+ 
+上面等同于==>>
+async initData(){
+ 
+   paging: {
+      page: 1,
+      pageSize: 5
+   }
+   const res = await orderPagingApi(this.paging) 
+}
+ 
+function orderPagingApi(data) {
+    return $axios({
+ 
+        'url': '/order/userPage',
+ 
+        'method': 'get',
+ 
+        'data': data
+    })
+ 
