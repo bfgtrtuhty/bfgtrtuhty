@@ -1,0 +1,7 @@
+    //接收数组参数方法:当客户端发送的参数名都是一样且值不一样的时候，就可以用到数组来接收了
+    //需要注意的是，请求参数名需要跟接收的数组名保持一致
+    @RequestMapping("/arrayParam")
+    public String arrayParam(String[] hobby){
+        System.out.println(Arrays.toString(hobby));
+        return "OK";
+    }
