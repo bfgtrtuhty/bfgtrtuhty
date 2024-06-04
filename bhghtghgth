@@ -1,0 +1,42 @@
+ <!-- 好书推荐 -->
+      <div class="book_rec">
+        <p class="book_rec_title">
+          <span>好书推荐</span>
+        </p>
+        <ul class="book_product">
+          <script type="text/javascript">
+            var images = ["bookrec01.jpg", "bookrec02.jpg", "bookrec03.jpg", "bookrec04.jpg",
+              "bookrec05.jpg"
+            ];
+            var names = ["偷影子的人", "新名字的故事", "摆渡人全系列", "老去的勇气", "霍乱时期的爱情", "告白",
+              "我不喜欢人类我想住进森林","巨人的陨落（全三册）", "我不喜欢这世界，我只喜欢你", "82年生的金智英"
+            ];
+            var authors = ["[法]马克·李维", "[意]埃莱娜·费兰特", "[英]克莱儿·麦克福尔", "[日]岸见一郎",
+              "[哥伦比亚]加西亚·马尔克斯","[日]凑佳苗", "[挪威]阿澜·卢", "[英]肯·福莱特", "乔一", "[韩]赵南柱"
+            ];
+            var prices = ["88.50", "42.00", "196.80", "25.99", "35.70", "28.40", "36.89", "129.80",
+              "29.80", "45.00"
+            ];
+            for (var i = 0; i < images.length; i++) {
+              var info =
+                      "<li class='book_slide'><div class='book_list_img'><a href='details.html?img=" +
+                      images[i] + "&tit=" + names[i] + "&aut=" + authors[i] + "&pri=" + prices[i] +
+                      "'><img src='img/" +
+                      images[i] +
+                      "'/></a></div><div class='book_name'><a href='#'>" + names[i] +
+                      "</a></div><div class='book_author'><a href='#'>" + authors[i] +
+                      "</a></div><div class='book_price'>￥" + prices[i] +
+                      "</div></li>";
+              document.write(info);
+            }
+          </script>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+      <span>Copyright (C) 遇见书店 2004-2020, All Rights Reserved</span></br>
+      <span>© 遇见书店 ICP备2548154894号</span></br>
+      <span>中华人民共和国出版物经营许可证 | 营业执照</span>
+</div>
+</body>
