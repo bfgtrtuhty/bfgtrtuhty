@@ -1,0 +1,25 @@
+.navigation_bar1 {
+    height: 50px;
+    display: flex;
+    
+}
+.navigation_bar1 p {
+    padding: 8px;
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 40px;
+}
+.navigation_bar1 p:first-letter{
+    color:#9ACD32 ;
+}
+.category{
+    padding: 15px;
+}
+.category a{
+    text-decoration: none;
+}
+.category p{
+    font-size: 20px;
+    color: #9ACD32;
+    border: 2px #151515 solid;
+    border-radius: 15px;
