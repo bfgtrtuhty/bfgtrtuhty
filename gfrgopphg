@@ -1,0 +1,43 @@
+<div id="tab">
+					<div id="tabNav">
+						<p><strong>鲜花用途</strong></p>
+						<ul>
+							<li class="active">爱情</li>
+							<li>慰问</li>
+							<li>商务</li>
+						</ul>
+					</div>
+					<div id="main">
+						<div class="item show">
+							<!-- tab爱情模块 -->
+							<div class="main-zuixin">
+								
+								<div class="zuixin-left"><!-- 左图 -->
+									<img src="img/index/shengrihua.png" />
+									
+								</div>
+								<div class="zuixin-right"><!-- 右图 -->
+									<div class="zuixin-right1"><!-- 左列 -->
+										<div>
+											<img src="img/index/aiqing1.png" />
+											
+										</div>
+										<div>
+											<img src="img/index/aiqing2.png" />
+											
+										</div>
+									</div>
+									<div class="zuixin-right2"><!-- 右列 -->
+										<div>
+											<img src="img/index/aiqing3.png" />
+											
+										</div>
+										<div>
+											<img src="img/index/aiqing4.png" />
+											
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
