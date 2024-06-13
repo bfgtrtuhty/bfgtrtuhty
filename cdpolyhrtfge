@@ -1,0 +1,4 @@
+<div id="coplayer" style="box-shadow:2px 0px 35px  #000;  -webkit-box-shadow:2px 0px 35px  #000; background-color:rgb(69,69,69); position:fixed;top:40px;left:0px;width:80%;height:100px;  margin: 0px auto;">
+                <video id="realcoplayer" autoplay="autoplay" controls="controls" webkit-playsinline playsinline x5-playsinline x-webkit-airplay="allow"  runat="server" ></video>
+                <a id="b_rate" onclick="rate(this);" style=" float:right; line-height:25px; margin-right:10px; color:#fff;display:none;">1x</a> 
+</div>
