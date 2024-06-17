@@ -1,0 +1,50 @@
+ </view>
+  </view>
+</view>
+<view class="seeDetailPriceBox" wx:if="{{isShowDetailPrice}}" catchtap="btnHideDetail">
+  <view class="shareb2">
+    <view class="shareb2-con">
+      <viwe class="detailTitle displayBox">优惠明细</viwe>
+      <view class="orderAllPrice">
+        <view class="leftTitle">
+          <text>商品总额</text>
+        </view>
+        <view class="rightTitle">
+          <text>￥{{totalPrice}}</text>
+        </view>
+      </view>
+      <view class="orderAllPrice">
+        <view class="leftTitle">
+          <text>运费</text>
+        </view>
+        <view class="rightTitle">
+          <text>+￥{{freight}}</text>
+        </view>
+      </view>
+      <view class="orderAllPrice">
+        <view class="leftTitle">
+          <text>优惠券</text>
+        </view>
+        <view class="rightTitle">
+          <text style="color:#FF4C0E;">-￥{{couponAmount}}</text>
+        </view>
+      </view>
+      <view class="orderAllPrice">
+        <view class="leftTitle">
+          <text>折扣</text>
+        </view>
+        <view class="rightTitle">
+          <text style="color:#FF4C0E;">-￥{{discountMoney}}</text>
+        </view>
+      </view>
+      <view class="orderAllPriceFinal">
+        <view class="leftTitle">
+          <text>合计</text>
+        </view>
+        <view class="rightTitle">
+          <text>￥{{amountPayable}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
